@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>CRUD CURSOS</title>
+</head>
+<body>
+    <h1>CRUD CURSOS</h1>
+    <div>
+        <a href="nuevo_curso"> Agregar nuevo curso </a>
+    </div>
+    <div>
+                <table border="1">
+                    <thead>
+                    <tr>
+                        <th>Codigo</th>
+                        <th>Nombre curso</th>
+                        <th>Profesor asignado</th>
+                        <th></th>
+                        <th></th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    {% for curso in cursos %}
+                    <tr>
+                        <td>{{curso.codigo}}</td>
+                        <td>{{curso.nombre_curso}}</td>
+                        <td>{{curso.rut_prof_asig}}</td>
+                        <td><a href="editar_curso/{{curso.codigo}}"> Editar curso </a></td>
+                        <td><a href="eliminar_curso/{{curso.codigo}}"> Eliminar curso </a></td>
+                    </tr>
+                    </tbody>
+                    {% endfor %}
+                </table>
+    </div>
+</body>
+</html>

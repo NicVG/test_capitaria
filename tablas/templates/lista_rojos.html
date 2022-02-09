@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>LISTA ROJOS</title>
+</head>
+<body>
+    <h1>Lista de alumnos con más de un promedio rojo</h1>
+<div>
+                <table border="1">
+                    <thead>
+                    <tr>
+                        <th>RUT</th>
+                        <th>Nombre</th>
+                        <th>Apellido</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    {% for rojo in rojos %}
+                    <tr>
+                        <td>{{rojo.0}}</td>
+                        <td>{{rojo.1}}</td>
+                        <td>{{rojo.2}}</td>
+                    </tr>
+                    </tbody>
+                    {% endfor %}
+                </table>
+    </div>
+</body>
+</html>

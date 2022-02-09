@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>LISTA PROMEDIO</title>
+</head>
+<body>
+    <h1>Lista de promedios</h1>
+    <div>
+                <table border="1">
+                    <thead>
+                    <tr>
+                        <th>RUT</th>
+                        <th>Nombre</th>
+                        <th>Apellido</th>
+                        <th>Nombre curso</th>
+                        <th>Promedio</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    {% for promedio in promedios %}
+                    <tr>
+                        <td>{{promedio.0}}</td>
+                        <td>{{promedio.1}}</td>
+                        <td>{{promedio.2}}</td>
+                        <td>{{promedio.3}}</td>
+                        <td>{{promedio.4}}</td>
+                    </tr>
+                    </tbody>
+                    {% endfor %}
+                </table>
+    </div>
+</body>
+</html>

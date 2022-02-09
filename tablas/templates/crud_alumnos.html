@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>CRUD ALUMNOS</title>
+</head>
+<body>
+    <h1>CRUD ALUMNOS</h1>
+    <div>
+        <a href="nuevo_alumno"> Agregar nuevo alumno </a>
+    </div>
+    <div>
+                <table border="1">
+                    <thead>
+                    <tr>
+                        <th>RUT</th>
+                        <th>Nombre</th>
+                        <th>Apellido</th>
+                        <th></th>
+                        <th></th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    {% for alumno in alumnos %}
+                    <tr>
+                        <td>{{alumno.rut}}</td>
+                        <td>{{alumno.nombre_alumno}}</td>
+                        <td>{{alumno.apellido_alumno}}</td>
+                        <td><a href="editar_alumno/{{alumno.rut}}"> Editar alumno </a></td>
+                        <td><a href="eliminar_alumno/{{alumno.rut}}"> Eliminar alumno </a></td>
+                    </tr>
+                    </tbody>
+                    {% endfor %}
+                </table>
+    </div>
+</body>
+</html>

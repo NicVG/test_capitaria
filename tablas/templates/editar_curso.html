@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>EDITAR CURSO</title>
+</head>
+<body>
+    <h1>Editar curso</h1>
+    <form method="POST">
+        <table>
+        {{formaCurso}}
+        </table>
+        <button type="submit"> Enviar </button>
+        {% csrf_token %}
+    </form>
+</body>
+</html>
