@@ -77,3 +77,11 @@ order by nombre_alumno,apellido_alumno
 Pregunta 5:
 
 b) 190 (sumatoria de 1 hasta 19)
+
+
+
+
+DJango
+
+Para el proyecto Django ya se deben haber cargado bases de datos o generar los models y realizar la migracion.
+Se necesita instalar psycopg2 para poder realizar los query que manejan los view para imprimir en los template.
