@@ -85,3 +85,4 @@ DJango
 
 Para el proyecto Django ya se deben haber cargado bases de datos o generar los models y realizar la migracion.
 Se necesita instalar psycopg2 para poder realizar los query que manejan los view para imprimir en los template.
+Carpeta Inicio se encarga de las views y templates de la pagina de inicio y carpeta tablas de las views y templates de todo lo demás.
